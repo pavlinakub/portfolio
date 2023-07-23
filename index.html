@@ -20,12 +20,11 @@
       }
       body {
         background-color: black;
-      }
-    
-      main {
+
         width: 90%;
         margin: auto; /*automaticky zarovna na stred,pokud mam nadefinovanou jednu hodnotu*/
       }
+
       h2 {
         text-align: center;
         color: white;
@@ -35,28 +34,31 @@
       #emailHelp {
         color: white;
       }
-      adrress{
+      /* adrress {
         padding-left: 40px;
-      }
-    
-      button:hover{
+      } */
+
+      button:hover {
         box-shadow: #11f80d;
-       
       }
-      .card{
+      .card {
         background-color: black;
       }
-      h5{
-        
+      h5 {
         float: left;
-        padding-right: 80px;
-        
+        padding-right: 60px;
       }
-      .card-title{
-       color: white ;
+      h6 {
+        text-align: center;
+        color: #0d4dfd;
       }
-     
-      footer{
+      .card-title {
+        color: white;
+      }
+      .card-body {
+        background-color: #0d4dfd;
+      }
+      footer {
         padding-top: 40px;
         text-align: center;
       }
@@ -76,25 +78,32 @@
   25%  { left:200px; top:0px;}
       } */
 
-
-      .profile{
+      .profile {
         padding-top: 50px;
         width: 350px;
-        clip-path: polygon(70.71% 100%, 100% 70.71%, 100% 29.29%, 70.71% 0%, 29.29% 0%, 0% 29.29%, 0% 70.71%, 29.29% 100%);
+        clip-path: polygon(
+          70.71% 100%,
+          100% 70.71%,
+          100% 29.29%,
+          70.71% 0%,
+          29.29% 0%,
+          0% 29.29%,
+          0% 70.71%,
+          29.29% 100%
+        );
       }
-      .borderText{
+      .borderText {
         border: dotted #fd0e91;
         /* padding-left: 20px; */
         width: 450px;
         height: 500px;
       }
-      .borderText p{
+      .borderText p {
         padding-left: 10px;
         padding-right: 10px;
-        text-indent:15px ;
+        text-indent: 15px;
       }
     </style>
-    
   </head>
   <body>
     <!-- navbar -->
@@ -102,7 +111,7 @@
       <div class="row">
         <div class="col">
           <nav
-            class="navbar bg-dark border-bottom border-bottom-dark"
+            class="navbar fixed-top bg-dark border-bottom border-bottom-dark"
             data-bs-theme="dark"
           >
             <div class="container-fluid">
@@ -147,19 +156,31 @@
           <h4>Introduction:</h4>
           <div class="borderText">
             <p>Hello!</p>
-            <p> My name is Pavlína Kubáčková and I'm a Junior Developer, who would like to grow and learn in the industry.
-              I recently transitioned from dental technician to software development, and i am currently studying Object-Oriented Programming and Web Application Programming at the Technical University of Ostrava (CZ).</p>
-              <p>My past experience has taught me valuable skills such as time management, attention to detail.
-              I'm excited to take on new challenges, collaborate with others, and contribute to innovative solutions. I'm currently seeking opportunities in the software development industry and would love to connect with like-minded individuals and organizations.</p>
-              <p> Thank you for reading and feel free to reach out to learn more!</p>
+            <p>
+              My name is Pavlína Kubáčková and I'm a Junior Developer, who would
+              like to grow and learn in the industry. I recently transitioned
+              from dental technician to software development, and i am currently
+              studying Object-Oriented Programming and Web Application
+              Programming at the Technical University of Ostrava (CZ).
+            </p>
+            <p>
+              My past experience has taught me valuable skills such as time
+              management, attention to detail. I'm excited to take on new
+              challenges, collaborate with others, and contribute to innovative
+              solutions. I'm currently seeking opportunities in the software
+              development industry and would love to connect with like-minded
+              individuals and organizations.
+            </p>
+            <p>
+              Thank you for reading and feel free to reach out to learn more!
+            </p>
           </div>
-            
-          </div>
+        </div>
         <div class="col offset-2">
           <div class="photo">
-          <img class="profile" src="./images/IMG_3560 (2).JPG" alt="me">
+            <img class="profile" src="./images/IMG_3560 (2).JPG" alt="me" />
+          </div>
         </div>
-        </div> 
       </div>
     </div>
 
@@ -173,104 +194,68 @@
         <div class="col"></div>
       </div>
     </div>
-    
-  
-      <!-- projects -->
-      <h2 id="projects">
-        <i class="fa-regular fa-file-code fa-sm" style="color: #0d4dfd"></i>
-        Projects
-      </h2>
-      <div class="container">
-        <div class="row">
-        
-  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="card-wrapper container-sm d-flex  justify-content-around">
-      <div class="card  " style="width: 30rem;">
-  <img src="./images/CsharpMVC.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">C# MVC</h5>
-      <button type="button" class="btn btn-info show-modal">Explore</button>
-  </div>
-</div><div class="card" style="width: 30rem;">
-  <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <button type="button" class="btn btn-info show-modal">Primary</button>
-    
-  </div>
+
+    <!-- projects -->
+    <h2 id="projects">
+      <i class="fa-regular fa-file-code fa-sm" style="color: #0d4dfd"></i>
+      Projects
+    </h2>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./images/CsharpMVC.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
         </div>
-       
-
-</div>
-    </div>
-
-
-
-
-
-    <div class="carousel-item">
-      <div class="card-wrapper container-sm d-flex   justify-content-around">
-      <div class="card  " style="width: 30rem;">
-  <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <button type="button" class="btn btn-info show-modal">Primary</button>
-    
-  </div>
-</div>
-
-<div class="card" style="width: 30rem;">
-  <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <button type="button" class="btn btn-info show-modal">Primary</button>
-    
-  </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/HotelWeb.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
         </div>
-       
-    </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card-wrapper container-sm d-flex  justify-content-around">
-      <div class="card " style="width: 30rem;">
-  <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <button type="button " class="btn btn-info show-modal">Primary</button>
-  </div>
-</div>
-        <div class="card" style="width: 30rem;">
-  <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <button type="button" class="btn btn-info show-modal">Primary</button>
-  </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/MapApp.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
         </div>
-        
-    </div>
-  </div>
-  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span  aria-hidden="true"><i class="fa-regular fa-circle-left fa-2xl" style="color: #0d4dfd;"></i></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" >
-    <span  aria-hidden="true"><i class="fa-regular fa-circle-right fa-2xl" style="color: #0d4dfd;"></i></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    
-    
-    
-    
-   
-
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
         </div>
-  
       </div>
-      
-           
+    </div>
 
     <!-- contacts -->
     <h2 id="contacts">
@@ -278,8 +263,8 @@
       Contacts
     </h2>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-4">
+      <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3">
+        <div class="col">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82380.90572708483!2d18.206845089885903!3d49.81608470760229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711586a3124e79d%3A0xb6228e6f63a023a8!2sOstrava-m%C4%9Bsto!5e0!3m2!1scs!2scz!4v1689927145591!5m2!1scs!2scz"
             width="350"
@@ -291,37 +276,37 @@
           ></iframe>
         </div>
         <div class="col-sm-4">
-          <h6>Write me </h6>
-                    <div class="textMe">
-                      <label for="InputEmail1" class="form-label">Email address:</label>
-                                <div class="form-floating">
-                                  <input
-                                    type="email"
-                                    class="form-control"
-                                    id="InputEmail1"
-                                    aria-describedby="emailHelp"
-                                    placeholder="Your email:"
-                                  />
-                                  <label for="InputEmail1">Your email: </label>
-                                  <div id="emailHelp" class="form-text">
-                                    I'll never share your email with anyone else.
-                                  </div>
-                                </div>
-                                <label for="floatingTextarea2" class="form-label">Message: </label>
-                                <div class="form-floating">
-                                  <textarea
-                                    class="form-control"
-                                    placeholder="Leave a message here"
-                                    id="floatingTextarea2"
-                                    style="height: 100px"
-                                  ></textarea>
-                                  <label for="floatingTextarea2">Message: </label>
-                                </div>
-                                <br />
-                                <button type="button" class="btn btn-primary">Send</button>
-                              </div>
-                    </div>
-        <div class="col-sm-4">
+          <h6>Write me</h6>
+          <div class="textMe">
+            <label for="InputEmail1" class="form-label">Email address:</label>
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="InputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Your email:"
+              />
+              <label for="InputEmail1">Your email: </label>
+              <div id="emailHelp" class="form-text">
+                I'll never share your email with anyone else.
+              </div>
+            </div>
+            <label for="floatingTextarea2" class="form-label">Message: </label>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a message here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2">Message: </label>
+            </div>
+            <br />
+            <button type="button" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+        <div class="col">
           <address>
             <i class="fa-brands fa-linkedin fa-2xl" style="color: #f5f7fa"></i>
             <a href="https://linkedin.com/in/pavlinakubackova">
@@ -338,34 +323,29 @@
         </div>
       </div>
     </div>
-
-
     <footer>
       <div class="container">
         <div class="row">
           <div class="col"></div>
-          <p>Copyright &copy; 2023 Pavlina Kubackova </p>
+          <p>Copyright &copy; 2023 Pavlina Kubackova</p>
         </div>
       </div>
     </footer>
-<!-- modal -->
+    <!-- modal -->
 
-<div class="modal hidden">
-  <button class="close-modal">&times;</button>
-  <h1>I'm a modal window 😍</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-    mollit anim id est laborum.
-  </p>
-</div>
-
-
-
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>I'm a modal window 😍</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/fb66f0d3c6.js"
